@@ -63,6 +63,7 @@ def gra():
             print("╚══════════════════════════════╩═════════════════════════════╝")
             print ("Liczba "+str(int(liczba))+" jest za mała")
         if(liczba == x):
+            naglowek()
             podejscia= podejscia + 1
             print("╔══════════════════════════════╦═════════════════════════════╗")
             napis = ("Podejść: "+ str(int(podejscia)))
@@ -92,9 +93,10 @@ def autogra():
     m= 1
     w= 100
     while liczba != x:
-        sleep(2)
+        sleep(1)
         liczba = random.randint(m,w)
         print("Wprowadzam liczbę: "+str(int(liczba)))
+        sleep(1)
         if(liczba > x):
             naglowek()
             podejscia= podejscia + 1
@@ -106,7 +108,7 @@ def autogra():
             print("║ "+napis+" ║"+napis2+"║")
             print("╚══════════════════════════════╩═════════════════════════════╝")
             print ("Liczba "+str(int(liczba))+" jest za duża")
-            w=liczba
+            w=liczba-1
         if(liczba < x):
             naglowek()
             podejscia= podejscia + 1
@@ -118,8 +120,9 @@ def autogra():
             print("║ "+napis+" ║"+napis2+"║")
             print("╚══════════════════════════════╩═════════════════════════════╝")
             print ("Liczba "+str(int(liczba))+" jest za mała")
-            m=liczba
+            m=liczba+1
         if(liczba == x):
+            naglowek()
             podejscia= podejscia + 1
             print("╔══════════════════════════════╦═════════════════════════════╗")
             napis = ("Podejść: "+ str(int(podejscia)))
