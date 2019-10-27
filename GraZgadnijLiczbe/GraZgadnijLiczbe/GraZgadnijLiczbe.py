@@ -50,7 +50,7 @@ def gra():
             napis2 = napis2.ljust(29)
             print("║ "+napis+" ║"+napis2+"║")
             print("╚══════════════════════════════╩═════════════════════════════╝")
-            print ("Liczba jest za duża")
+            print ("Liczba "+str(int(liczba))+" jest za duża")
         if(liczba < x):
             naglowek()
             podejscia= podejscia + 1
@@ -61,7 +61,7 @@ def gra():
             napis2 = napis2.ljust(29)
             print("║ "+napis+" ║"+napis2+"║")
             print("╚══════════════════════════════╩═════════════════════════════╝")
-            print ("Liczba jest za mała")
+            print ("Liczba "+str(int(liczba))+" jest za mała")
         if(liczba == x):
             podejscia= podejscia + 1
             print("╔══════════════════════════════╦═════════════════════════════╗")
@@ -92,6 +92,7 @@ def autogra():
     m= 1
     w= 100
     while liczba != x:
+        sleep(2)
         liczba = random.randint(m,w)
         print("Wprowadzam liczbę: "+str(int(liczba)))
         if(liczba > x):
@@ -104,7 +105,7 @@ def autogra():
             napis2 = napis2.ljust(29)
             print("║ "+napis+" ║"+napis2+"║")
             print("╚══════════════════════════════╩═════════════════════════════╝")
-            print ("Liczba jest za duża")
+            print ("Liczba "+str(int(liczba))+" jest za duża")
             w=liczba
         if(liczba < x):
             naglowek()
@@ -116,7 +117,7 @@ def autogra():
             napis2 = napis2.ljust(29)
             print("║ "+napis+" ║"+napis2+"║")
             print("╚══════════════════════════════╩═════════════════════════════╝")
-            print ("Liczba jest za mała")
+            print ("Liczba "+str(int(liczba))+" jest za mała")
             m=liczba
         if(liczba == x):
             podejscia= podejscia + 1
