@@ -1,13 +1,12 @@
 from time import sleep
 import sys
-import pyfiglet #biblioteka do ascii tekstu
 import random
 import os
 import datetime
 
 def naglowek():
     os.system('CLS') #czyszczenie konsoli
-    ascii_banner = pyfiglet.figlet_format("Zgadnij liczbę!")
+    ascii_banner = ("Zgadnij liczbę!")
     print(ascii_banner) #wypisanie baneru z tekstem powyżej 
 
 def menuP():
@@ -75,7 +74,7 @@ def gra():
             napis2 = napis2.ljust(29)
             print("║ "+napis+" ║"+napis2+"║")
             print("╚══════════════════════════════╩═════════════════════════════╝")
-            ascii_banner = pyfiglet.figlet_format("Brawo, moj przyjacielu!")
+            ascii_banner = ("Brawo, moj przyjacielu!")
             print(ascii_banner)
             menuP()
 
@@ -133,12 +132,12 @@ def autogra():
             napis2 = napis2.ljust(29)
             print("║ "+napis+" ║"+napis2+"║")
             print("╚══════════════════════════════╩═════════════════════════════╝")
-            ascii_banner = pyfiglet.figlet_format("Brawo, moj przyjacielu!")
+            ascii_banner = ("Brawo, moj przyjacielu!")
             print(ascii_banner)
             menuP()
 def kod():
     os.system('CLS') #czyszczenie konsoli
-    ascii_banner = pyfiglet.figlet_format("Pigułka")
+    ascii_banner = ("Pigułka")
     print(ascii_banner)
     #Kod wypisany w jednej komendzie
     print("import random\n\nx = random.randint(1,100)\n\nwhile liczba != x:\n\tliczba = int(input(\"Wprowadź liczbę: \"))\n\tif(liczba > x):\n\t\tprint (\"Liczba jest za duża\")\n\tif(liczba < x):\n\t\tprint (\"Liczba jest za mała\")\n\tif(liczba == x):\n\t\tprint (\"brawo, mój przyjacielu\")")
@@ -147,7 +146,7 @@ def kod():
     menuP()
 def autorzy():
     os.system('CLS') #czyszczenie konsoli
-    ascii_banner = pyfiglet.figlet_format("Autorzy")
+    ascii_banner = ("Autorzy")
     print(ascii_banner)
     print("╔══════════════════╗")
     autor=" Mateusz Bereta"
@@ -160,11 +159,11 @@ def autorzy():
     print("╚══════════════════╝")
     input()
     os.system('CLS') #czyszczenie konsoli
-    ascii_banner = pyfiglet.figlet_format("Pytania?")
+    ascii_banner = ("Pytania?")
     print(ascii_banner)
     input()
     os.system('CLS') #czyszczenie konsoli
-    ascii_banner = pyfiglet.figlet_format("Dziekujemy : )")
+    ascii_banner = ("Dziekujemy : )")
     print(ascii_banner)
     input()
     naglowek()
