@@ -150,7 +150,7 @@ if($i>0){
 mysqli_close($connect);
 ?>
 
-
+</section>
 
 
 </main>
